@@ -4,7 +4,8 @@
  * * Input:
  * soHaiChuSo = 0
  * tinhTong = 0
- * 
+ * soHangDonVi = 0
+ * soHangChuc = 0
  * * Process
  * B1: Khởi tạo biến
  * B2: Tạo hàm tính trung bình
@@ -32,10 +33,12 @@ function tongHaiKySo() {
     // B3:
     soHaiChuSo = document.getElementById("BT5_input1").value
     // B4:
-    tinhTong = 
+    soHangDonVi = soHaiChuSo % 10
+    soHangChuc = soHaiChuSo / 10
+    tinhTong = (parseInt(soHangDonVi)) + (parseInt(soHangChuc))
     // B5: 
     document.getElementById("result5").innerHTML = `
-    👉`
+    👉 ${tinhTong} `
 }
 
 // B6:
